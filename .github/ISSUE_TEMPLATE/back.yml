@@ -14,7 +14,7 @@ body:
       required: false
 
   - type: textarea
-    id: Requsitos tecnicos
+    id: technical-requirements
     attributes:
       label: todo
       description: Explica en pasos que se necesita hacer en el issue.
@@ -23,7 +23,7 @@ body:
       required: false
 
   - type: textarea
-    id: acceptance
+    id: acceptance-criteria
     attributes:
       label: Aceptance criteria
       description: Explica con detalle lo que se necesita para dar como valido el desarrollo.
