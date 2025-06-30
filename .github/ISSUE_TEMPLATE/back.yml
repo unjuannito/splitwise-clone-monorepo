@@ -1,7 +1,7 @@
-name: Docker Devcontainer
-description: Reporta problemas relacionados con el devcontainer Docker.
-title: "[Devcontainer] "
-labels: ["devcontainer", "docker"]
+name: Back issue
+description: Issues relacionados con el back
+title: "Back - "
+labels: ["back"]
 body:
   - type: markdown
     attributes:

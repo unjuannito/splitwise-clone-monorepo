@@ -1,0 +1,17 @@
+name: Docker Devcontainer
+description: Reporta problemas relacionados con el devcontainer Docker.
+title: ""
+labels: ["devcontainer", "docker"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe el problema relacionado con el devcontainer Docker.
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalles
+      description: Por favor proporciona detalles del problema.
+      placeholder: Describe el problema...
+    validations:
+      required: true
