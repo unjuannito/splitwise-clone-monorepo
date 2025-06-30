@@ -1,7 +1,7 @@
 name: Docker Devcontainer
 description: Reporta problemas relacionados con el devcontainer Docker.
 title: ""
-labels: ["devcontainer", "docker"]
+labels: ["back"]
 body:
   - type: markdown
     attributes:
