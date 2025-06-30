@@ -1,17 +1,58 @@
-name: Back issue
-description: Issues relacionados con el back
-title: "BACK - "
-labels: ["back"]
+name: Nueva Feature Técnica
+description: >
+  Describe detalladamente la nueva funcionalidad que deseas implementar.
+  Incluye el propósito, contexto y cualquier otro detalle relevante.
+title: "Feature: "
+labels: ["feature", "needs-triage"]
+assignees: ["tu-usuario-o-equipo"]
 body:
   - type: markdown
     attributes:
       value: |
-        Describe el problema relacionado con el backend.
+        ## 🧠 Descripción general
+        Por favor proporciona una descripción clara y concisa de lo que se desea lograr,
+        por qué es importante y cómo encaja en el producto en general.
+
   - type: textarea
-    id: details
+    id: long-description
     attributes:
-      label: Detalles
-      description: Por favor proporciona detalles del problema.
-      placeholder: Describe el problema...
+      label: Descripción larga
+      description: Explica con detalle el objetivo, contexto y alcance funcional.
+      placeholder: "Aquí va una descripción extensa..."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## 🔧 Detalles técnicos y checklist"
+
+  - type: checkboxes
+    id: tech-checklist
+    attributes:
+      label: Checklist técnico
+      description: Selecciona las tareas técnicas necesarias para implementar esta feature.
+      options:
+        - label: Definir esquema de datos / modelo
+        - label: Crear API endpoint y validaciones
+        - label: Desarrollar componente UI
+        - label: Añadir pruebas unitarias
+        - label: Actualizar documentación
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## ✅ Criterios de aceptación"
+
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Criterios de aceptación
+      description: Marca cada criterio cuando esté cumplido.
+      options:
+        - label: La API devuelve datos en formato JSON válido
+        - label: El componente UI renderiza correctamente en diferentes navegadores
+        - label: Las pruebas cubren casos límite
+        - label: La documentación está actualizada y accesible
     validations:
       required: true
