@@ -1,12 +1,12 @@
-name: Back issue
-description: Issues relacionados con el back
-title: "BACK - "
-labels: ["back"]
+name: Front issue
+description: Issues relacionados con el front
+title: "Front - "
+labels: ["front"]
 body:
   - type: markdown
     attributes:
       value: |
-        Describe el problema relacionado con el backend.
+        Describe el problema relacionado con el frontend.
   - type: textarea
     id: details
     attributes:
