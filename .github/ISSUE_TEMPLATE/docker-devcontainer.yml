@@ -1,69 +1,17 @@
-name: 🛠️ Configuración entorno Docker + DevContainer
-description: Configurar entorno dockerizado con frontend React+Vite, backend Spring Boot (Java 21) y PostgreSQL, integrado en VSCode DevContainer.
-title: "Setup Docker DevContainer: "
-labels: ["dev-environment", "docker", "devcontainer"]
-assignees: ["tu-usuario-o-equipo"]
-
+name: Docker Devcontainer
+description: Reporta problemas relacionados con el devcontainer Docker.
+title: "[Devcontainer] "
+labels: ["devcontainer", "docker"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## 📘 Descripción general
-        Vamos a crear un entorno de desarrollo dockerizado, compatible con Visual Studio Code, que incluya:
-        - **Frontend**: React + Vite
-        - **Backend**: Spring Boot con Java 21
-        - **Base de datos**: PostgreSQL
-        Cada servicio estará en su contenedor siguiendo buenas prácticas. Esto permitirá un setup consistente y reproducible, y facilitará el onboarding.
-
+        Describe el problema relacionado con el devcontainer Docker.
   - type: textarea
-    id: long-description
+    id: details
     attributes:
-      label: Descripción detallada
-      description: Explica con más detalle el objetivo, el flujo de trabajo y cualquier restricción adicional.
-      placeholder: "Aquí va la descripción completa, contexto, requisitos..."
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: "## 🔧 Detalles técnicos y checklist"
-
-  - type: checkboxes
-    id: tech-checklist
-    attributes:
-      label: Checklist técnico
-      description: Marca cuando completes cada tarea técnica.
-      options:
-        - label: Crear Dockerfile `frontend/` con Node 20 LTS
-        - label: Crear Dockerfile `backend/` con Java 21 (Alpine) y Maven Wrapper
-        - label: Crear Dockerfile `db/` con PostgreSQL 14
-        - label: Crear `.devcontainer/devcontainer.json` apuntando al backend
-        - label: Documentar uso del entorno en `README.md`
-        - label: Configurar puertos:
-            * 3000 para Vite (frontend)
-            * 8080 para Spring Boot (backend)
-            * 5432 para PostgreSQL (db)
-        - label: Mantener variables de entorno necesarias
-        - label: Añadir extensiones recomendadas en `devcontainer.json`
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: "## ✅ Criterios de aceptación"
-
-  - type: checkboxes
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance criteria
-      description: Verifica que cada criterio se cumpla para cerrar el issue.
-      options:
-        - label: `.devcontainer/` existe con configuración válida
-        - label: Docker build compila sin errores
-        - label: Contenedor backend ejecuta Spring Boot con Java 21
-        - label: Contenedor frontend ejecuta Vite en modo desarrollo
-        - label: Contenedor PostgreSQL contiene base de datos `yambodb` con usuario y contraseña
-        - label: VSCode permite "Reopen in Container" y el entorno funciona
-        - label: Puertos 3000, 8080 y 5432 están expuestos y accesibles desde host
+      label: Detalles
+      description: Por favor proporciona detalles del problema.
+      placeholder: Describe el problema...
     validations:
       required: true
